@@ -1,0 +1,236 @@
+/* 
+  LocalLanguage.strings
+  InstantCare
+
+  Created by bruce-zhu on 15/11/27.
+  Copyright © 2015年 omg. All rights reserved.
+*/
+
+// ------------ 通用 ------------
+"Common_save_success" = "保存成功";
+"Common_network_request_OK" = "网络请求成功";
+"Common_network_request_fail" = "网络请求失败";
+"Common_network_request_now" = "正在请求，请稍后";
+"Common_OK" = "确认";
+"Common_cancel" = "取消";
+"Common_input_error" = "输入有误";
+
+// ------------- VC -------------
+"VC_login_email" = "电子邮件";
+"VC_login_pd" = "密码";
+
+"VC_login_remember" = "记得我的登录信息";
+"VC_login_forgetPd" = "忘记密码?";
+
+"VC_login_OK" = "确认";
+"VC_login_Reg" = "注册";
+
+"VC_login_error_input" = "请输入正确的用户名和密码";
+"VC_login_logo_image_name" = "omg_loading_text";
+"VC_login_login_now" = "正在登录";
+"VC_login_login_success" = "登录成功";
+"VC_login_login_fail" = "登录失败";
+
+// ----------- Main VC ----------
+"MAIN_VC_location_btn" = "定位记录";
+"MAIN_VC_health_btn" = "健康记录";
+"MAIN_VC_call_btn" = "拨打电话";
+"MAIN_VC_vip_btn" = "会员服务";
+
+"MAIN_VC_menu_accout" = "账户设定";
+"MAIN_VC_menu_device" = "装置设定";
+"MAIN_VC_menu_logout" = "账号退出";
+"MAIN_VC_menu_language" = "语言设定";
+
+// --------- Register VC --------
+"Reg_VC_title" = "注册";
+"Reg_VC_tip_name" = "姓名";
+"Reg_VC_tip_nickname" = "昵称";
+"Reg_VC_tip_email" = "E-mail";
+"Reg_VC_tip_password" = "登入密码";
+"Reg_VC_tip_again_pd" = "再次输入密码";
+"Reg_VC_tip_birthday" = "点击以输入生日";
+"Reg_VC_tip_address" = "地址";
+"Reg_VC_tip_phone" = "电话";
+"Reg_VC_birthday" = "生日";
+"Reg_VC_birthday_cancel" = "取消";
+"Reg_VC_birthday_OK" = "确认";
+"Reg_VC_register_tip" = "E-mail和密码必须填写";
+"Reg_VC_register_password_error" = "请输入正确的密码";
+"Reg_VC_register_now" = "正在注册，请稍后";
+"Reg_VC_register_success" = "注册成功";
+"Reg_VC_register_fail" = "注册失败";
+
+// --------- Location VC --------
+"Location_VC_card_btn" = "打卡";
+"Location_VC_history_btn" = "历史";
+"Location_VC_SOS_btn" = "救援";
+"Location_VC_latest_record" = "最新记录";
+"Location_VC_location_now" = "正在获取地址";
+"Location_VC_location_fail" = "地址获取失败";
+"Location_VC_location_no_records" = "没有资料";
+
+// ------ Device Setting VC -----
+"DeviceSetting_VC_select" = "请选择要执行的操作";
+"DeviceSetting_VC_edit" = "编辑";
+"DeviceSetting_VC_delete" = "删除";
+"DeviceSetting_VC_delete_confirm" = "是否确认删除该笔资料?";
+"DeviceSetting_VC_delete_success" = "资料成功删除";
+"DeviceSetting_VC_OK" = "确认";
+"DeviceSetting_VC_cancel" = "取消";
+"DeviceSetting_VC_add_device" = "新增资料";
+"DeviceSetting_VC_add_header_tip" = "点击头像以做更换";
+"DeviceSetting_VC_add_name" = "名字";
+"DeviceSetting_VC_add_phone" = "电话";
+"DeviceSetting_VC_add_imei" = "IMEI码";
+"DeviceSetting_VC_add_imei_error" = "IMEI输入有误";
+"DeviceSetting_VC_add_OK" = "完成";
+"DeviceSetting_VC_add_cancel" = "取消";
+"DeviceSetting_VC_edit_change_icon" = "点击以更换";
+"DeviceSetting_VC_edit_device_setting" = "硬件设定";
+"DeviceSetting_VC_edit_device_setting_detail" = "跌倒侦测, GPS启动频率, 上传间隔...";
+
+"DeviceSetting_VC_edit_header_src" = "选择头像来源";
+"DeviceSetting_VC_edit_header_src_camera" = "照相机";
+"DeviceSetting_VC_edit_header_src_gallery" = "本地相册";
+
+// ------------ Device Edit VC ----------
+"DeviceEdit_VC_title" = "编辑资料";
+"DeviceEdit_VC_watch_select_title" = "请选择您的装置图像";
+
+"DeviceEdit_VC_setting_title_device_set" = "硬件设定";
+"DeviceEdit_VC_setting_title_device_set_detail" = "跌倒侦测, GPS启动频率, 上传间隔";
+"DeviceEdit_VC_setting_title_call_set" = "拨号设定";
+"DeviceEdit_VC_setting_title_call_set_detail" = "亲情号码, 紧急号码";
+"DeviceEdit_VC_setting_title_body_set" = "身体素质";
+"DeviceEdit_VC_setting_title_body_set_detail" = "身高, 步长, 体重";
+"DeviceEdit_VC_setting_title_device_remind" = "提醒设定";
+"DeviceEdit_VC_setting_title_device_remind_detail" = "设定回诊、吃药等定时提醒功能";
+"DeviceEdit_VC_setting_title_device_reset" = "重置";
+"DeviceEdit_VC_setting_title_device_reset_detail" = "恢复原始设定";
+
+// ------ Device Setting Detail VC -----
+"DeviceSettingDetail_VC_title" = "硬体设定";
+"DeviceSettingDetail_VC_falldown" = "跌倒侦测";
+"DeviceSettingDetail_VC_poweron_time" = "定时开机";
+"DeviceSettingDetail_VC_poweroff_time" = "定时关机";
+"DeviceSettingDetail_VC_listen" = "背景监听";
+"DeviceSettingDetail_VC_light_on" = "抬手亮屏";
+
+"DeviceSettingDetail_VC_start_frequency" = "启动频率";
+"DeviceSettingDetail_VC_gps_on" = "GPS启动频率";
+"DeviceSettingDetail_VC_upload" = "上传间隔频率";
+"DeviceSettingDetail_VC_every" = "每";
+"DeviceSettingDetail_VC_every_minute" = "分钟";
+"DeviceSettingDetail_VC_shutdown" = "关闭";
+
+// --- Device Setting Detial Call VC ---
+"DeviceSettingDetailCall_VC_title" = "拨号设定";
+"DeviceSettingDetailCall_VC_call_mute" = "来电静音";
+"DeviceSettingDetailCall_VC_call_limit" = "通话限时";
+"DeviceSettingDetailCall_VC_call_set" = "通话设置";
+"DeviceSettingDetailCall_VC_call_family_number" = "亲情号码";
+"DeviceSettingDetailCall_VC_call_sos_number" = "紧急号码";
+
+"DeviceSettingDetailCall_VC_call_first_group" = "第一组";
+"DeviceSettingDetailCall_VC_call_second_group" = "第二组";
+"DeviceSettingDetailCall_VC_call_third_group" = "第三组";
+
+// -- Device Setting Detail Body VC --
+"DeviceSettingDetailBody_VC_step" = "步距设定";
+"DeviceSettingDetailBody_VC_height" = "身高设定";
+"DeviceSettingDetailBody_VC_weight" = "体重设定";
+
+// 周
+"Remind_week_1" = "一";
+"Remind_week_2" = "二";
+"Remind_week_3" = "三";
+"Remind_week_4" = "四";
+"Remind_week_5" = "五";
+"Remind_week_6" = "六";
+"Remind_week_7" = "日";
+
+"Remind_week_weekonce" = "一次";
+"Remind_week_week1" = "周一";
+"Remind_week_week2" = "周二";
+"Remind_week_week3" = "周三";
+"Remind_week_week4" = "周四";
+"Remind_week_week5" = "周五";
+"Remind_week_week6" = "周六";
+"Remind_week_week7" = "周日";
+
+// -- Remind Setting VC ---
+"RemindSettingVC_clinic" = "回诊提醒";
+"RemindSettingVC_clinic_tip" = "可设定时提醒功能";
+"RemindSettingVC_medical" = "吃药提醒";
+"RemindSettingVC_remind" = "提醒";
+
+"Remind_Start" = "开启";
+"Remind_Time" = "时间";
+"Remind_repeat" = "重复提醒";
+"Remind_date" = "提醒日期";
+
+// ------- Health Record VC -----
+"HealthRecord_VC_blood_pressure" = "血压";
+"HealthRecord_VC_sbp_title" = "低压";
+"HealthRecord_VC_dbp_title" = "高压";
+"HealthRecord_VC_pluse_title" = "脉搏";
+
+"HealthRecord_VC_blood_sugar" = "血糖";
+"HealthRecord_VC_glucose_title" = "全血血糖";
+"HealthRecord_VC_plasma_title" = "血浆血糖";
+
+"HealthRecord_VC_heart_rate" = "心率";
+"HealthRecord_VC_pedometer" = "计步";
+"HealthRecord_VC_pedometer_numbers" = "步数";
+"HealthRecord_VC_pedometer_cal" = "卡路里";
+"HealthRecord_VC_pedometer_dis" = "距离";
+"HealthRecord_VC_pedometer_standard" = "标准值";
+
+"HealthRecord_VC_init_tip" = "请从上方点击您希望取得的健康资讯项目";
+
+"HealthRecord_VC_last_checktime" = "最后测量时间";
+"HealthRecord_VC_change_date" = "更改测量区间";
+"HealthRecord_VC_change_date_title" = "测量区间日期";
+
+"HealthRecord_VC_change_date_error" = "日期选择错误，请重新选择";
+
+"HealthRecord_VC_lower_than" = "低于";
+
+// ---------- VIP service -------
+"VIPService_VC_wallet" = "电子钱包";
+"VIPService_VC_super_mall" = "超级商城";
+"VIPService_VC_bonus_area" = "红利专区";
+"VIPService_VC_electronic_ticket" = "电子票券";
+
+// ----------- call VC ----------
+"Call_VC_calltype" = "请选择要拨打的方式";
+"Call_VC_SpeedDial" = "快速拨号";
+"Call_VC_Envlistening" = "环境监听";
+"Call_VC_getdevices" = "正在获取设备列表";
+"Call_VC_getdevices_success" = "获取成功";
+"Call_VC_getdevices_fail" = "获取失败";
+"Call_VC_getdevices_user_name_not_set" = "姓名未设置";
+"Call_VC_getdevices_phone_number_not_set" = "电话号码未设置";
+"Call_VC_getdevices_phone_number_not_set_tip" = "请先设置电话号码";
+
+
+// ------ Account Set VC --------
+"AccountSetting_VC_title" = "账户设定";
+"AccountSetting_VC_btn_title" = "显示密码";
+"AccountSetting_VC_btn_title_hide" = "隐藏密码";
+
+// ------ Account Edit VC -------
+"AccountEdit_VC_title" = "账户设定";
+
+// --------- QRCode VC ----------
+"QRCode_VC_start_camera" = "相机启动中";
+"QRCode_VC_camera_permission" = "请到设置隐私中开启本程序相机权限";
+
+// -------- MJRefresh -----------
+"MJRefresh_Pull_down_refresh" = "下拉可以刷新";
+"MJRefresh_Refresh_Now" = "立即刷新";
+"MJRefresh_Refreshing_data" = "正在刷新数据";
+"MJRefresh_last_update" = "最后更新: ";
+"MJRefresh_last_update_no_record" = "最后更新: 无记录";
+

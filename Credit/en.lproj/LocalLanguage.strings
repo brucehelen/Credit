@@ -1,0 +1,212 @@
+/*
+ LocalLanguage.strings
+ InstantCare
+ 
+ Created by bruce-zhu on 15/11/27.
+ Copyright © 2015年 omg. All rights reserved.
+ */
+
+// ------------ 通用 ------------
+"Common_save_success" = "Saved successfully";
+"Common_network_request_OK" = "Successful network request";
+"Common_network_request_fail" = "Failed network request";
+"Common_network_request_now" = "Sending request, please wait";
+"Common_cancel" = "Cancel";
+"Common_input_error" = "Input error";
+
+// ------------- VC -------------
+"VC_login_email" = "email";
+"VC_login_pd" = "password";
+
+"VC_login_remember" = "Save login information";
+"VC_login_forgetPd" = "Forgot your password?";
+
+"VC_login_OK" = "Confirm";
+"VC_login_Reg" = "Register";
+
+"VC_login_error_input" = "Incorrect email or password";
+"VC_login_logo_image_name" = "omg_loading_text";
+"VC_login_login_now" = "Login";
+"VC_login_login_success" = "Login Successfully";
+"VC_login_login_fail" = "Login Failed";
+
+// ----------- Main VC ----------
+"MAIN_VC_location_btn" = "Location";
+"MAIN_VC_health_btn" = "Health";
+"MAIN_VC_call_btn" = "Call";
+"MAIN_VC_vip_btn" = "Service";
+
+"MAIN_VC_menu_accout" = "Accout";
+"MAIN_VC_menu_device" = "Device";
+"MAIN_VC_menu_logout" = "Logout";
+"MAIN_VC_menu_language" = "Language";
+
+// --------- Register VC --------
+"Reg_VC_title" = "Register";
+"Reg_VC_tip_name" = "Name";
+"Reg_VC_tip_nickname" = "Nick Name";
+"Reg_VC_tip_email" = "Email";
+"Reg_VC_tip_password" = "Password";
+"Reg_VC_tip_again_pd" = "Enter your password again";
+"Reg_VC_tip_birthday" = "Click to enter your birthday";
+"Reg_VC_tip_address" = "Address";
+"Reg_VC_tip_phone" = "Phone number";
+"Reg_VC_birthday" = "Birthday";
+"Reg_VC_birthday_cancel" = "Cancel";
+"Reg_VC_birthday_OK" = "Confirm";
+"Reg_VC_register_tip" = "E-mail and password are required";
+"Reg_VC_register_password_error" = "Please enter correct password";
+"Reg_VC_register_now" = "Register now";
+"Reg_VC_register_success" = "Registering";
+"Reg_VC_register_fail" = "Registration failed";
+
+// --------- Location VC --------
+"Location_VC_card_btn" = "Check";
+"Location_VC_history_btn" = "History";
+"Location_VC_SOS_btn" = "SOS";
+"Location_VC_latest_record" = "Record";
+"Location_VC_location_now" = "Positioning";
+"Location_VC_location_fail" = "Fail to locate";
+"Location_VC_location_no_records" = "No record";
+
+// ------ Device Setting VC -----
+"DeviceSetting_VC_select" = "Please select an action";
+"DeviceSetting_VC_edit" = "Edit";
+"DeviceSetting_VC_delete" = "Delete";
+"DeviceSetting_VC_delete_confirm" = "Are you sure you want to delete?";
+"DeviceSetting_VC_delete_success" = "Removed successfully";
+"DeviceSetting_VC_OK" = "Confirm";
+"DeviceSetting_VC_cancel" = "Cancel";
+"DeviceSetting_VC_add_device" = "Add device";
+"DeviceSetting_VC_add_header_tip" = "Click to add new image";
+"DeviceSetting_VC_add_name" = "Name";
+"DeviceSetting_VC_add_phone" = "Phone Number";
+"DeviceSetting_VC_add_imei" = "IMEI";
+"DeviceSetting_VC_add_imei_error" = "Incorrect IMEI";
+"DeviceSetting_VC_add_OK" = "Confirm";
+"DeviceSetting_VC_add_cancel" = "Cancel";
+"DeviceSetting_VC_edit_change_icon" = "Click to change";
+"DeviceSetting_VC_edit_device_setting" = "Device Setting";
+"DeviceSetting_VC_edit_device_setting_detail" = "GPS start, upload interval...";
+
+"DeviceSetting_VC_edit_header_src" = "Please choose";
+"DeviceSetting_VC_edit_header_src_camera" = "Camera";
+"DeviceSetting_VC_edit_header_src_gallery" = "Gallery";
+
+// ------------ Device Edit VC ----------
+"DeviceEdit_VC_title" = "Edit device";
+"DeviceEdit_VC_watch_select_title" = "Please select your watch model";
+
+"DeviceEdit_VC_setting_title_device_set" = "Device Setting";
+"DeviceEdit_VC_setting_title_device_set_detail" = "Fall detection, GPS start frequency, Upload interval";
+"DeviceEdit_VC_setting_title_call_set" = "Dial setting";
+"DeviceEdit_VC_setting_title_call_set_detail" = "Family number, Emergency numbers";
+"DeviceEdit_VC_setting_title_body_set" = "Physical fitness";
+"DeviceEdit_VC_setting_title_body_set_detail" = "Height, Steps, Weight";
+"DeviceEdit_VC_setting_title_device_remind" = "提醒设定";
+"DeviceEdit_VC_setting_title_device_remind_detail" = "设定回诊、吃药等定时提醒功能";
+"DeviceEdit_VC_setting_title_device_reset" = "Reset";
+"DeviceEdit_VC_setting_title_device_reset_detail" = "Restore device to original setting";
+
+// ------ Device Setting Detail VC -----
+"DeviceSettingDetail_VC_title" = "Device Setting";
+"DeviceSettingDetail_VC_falldown" = "Fall down";
+"DeviceSettingDetail_VC_poweron_time" = "Power on";
+"DeviceSettingDetail_VC_poweroff_time" = "Power off";
+"DeviceSettingDetail_VC_listen" = "Environment monitoring";
+"DeviceSettingDetail_VC_light_on" = "Backlight";
+"DeviceSettingDetail_VC_start_frequency" = "Start Frequency";
+"DeviceSettingDetail_VC_gps_on" = "GPS ON";
+"DeviceSettingDetail_VC_upload" = "Upload";
+
+"DeviceSettingDetail_VC_every" = "Every";
+"DeviceSettingDetail_VC_every_minute" = "minutes";
+"DeviceSettingDetail_VC_shutdown" = "Turn off";
+
+// --- Device Setting Detial Call VC ---
+"DeviceSettingDetailCall_VC_title" = "Dial setting";
+"DeviceSettingDetailCall_VC_call_mute" = "Call mute";
+"DeviceSettingDetailCall_VC_call_limit" = "Call limit";
+"DeviceSettingDetailCall_VC_call_set" = "Call set";
+"DeviceSettingDetailCall_VC_call_family_number" = "Family number";
+"DeviceSettingDetailCall_VC_call_sos_number" = "SOS number";
+
+"DeviceSettingDetailCall_VC_call_first_group" = "First";
+"DeviceSettingDetailCall_VC_call_second_group" = "Second";
+"DeviceSettingDetailCall_VC_call_third_group" = "Third";
+
+// -- Device Setting Detail Body VC --
+"DeviceSettingDetailBody_VC_step" = "Steps";
+"DeviceSettingDetailBody_VC_height" = "Height";
+"DeviceSettingDetailBody_VC_weight" = "Weight";
+
+// ------- Health Record VC -----
+"HealthRecord_VC_blood_pressure" = "BP";
+"HealthRecord_VC_sbp_title" = "SDP";
+"HealthRecord_VC_dbp_title" = "DBP";
+"HealthRecord_VC_pluse_title" = "Pulse";
+"HealthRecord_VC_blood_sugar" = "BG";
+"HealthRecord_VC_glucose_title" = "Whole BG";
+"HealthRecord_VC_plasma_title" = "PG";          // Plasma glucose
+"HealthRecord_VC_heart_rate" = "HR";
+"HealthRecord_VC_pedometer" = "PD";
+"HealthRecord_VC_pedometer_numbers" = "steps";
+"HealthRecord_VC_pedometer_cal" = "Calorie";
+"HealthRecord_VC_pedometer_dis" = "Distance";
+"HealthRecord_VC_pedometer_standard" = "Standard";
+
+"HealthRecord_VC_init_tip" = "Please click buttons above to obtain health information";
+
+"HealthRecord_VC_last_checktime" = "Date";
+"HealthRecord_VC_change_date" = "Change interval";
+"HealthRecord_VC_change_date_title" = "Measurement range Date";
+
+"HealthRecord_VC_change_date_error" = "Date selection error, please reselect";
+"HealthRecord_VC_lower_than" = "Lower";
+
+// ---------- VIP service -------
+"VIPService_VC_wallet" = "Wallet";
+"VIPService_VC_super_mall" = "Market";
+"VIPService_VC_bonus_area" = "Bonus";
+"VIPService_VC_electronic_ticket" = "Coupon";
+
+//----------- Web VC ------------
+"Web_VC_market_loading" = "Market loading";
+"Web_VC_coupon_loading" = "Coupon loading";
+"Web_VC_bonus_loading" = "Bonus loading";
+"Web_VC_stream_loading" = "Stream loading";
+"Web_VC_loading" = "Loading";
+
+// ----------- call VC ----------
+"Call_VC_calltype" = "Please choose call type";
+"Call_VC_SpeedDial" = "Direct Dial";
+"Call_VC_Envlistening" = "Environment monitoring";
+"Call_VC_getdevices" = "Getting device list";
+"Call_VC_getdevices_success" = "Obtain device list successfully";
+"Call_VC_getdevices_fail" = " Fail to obtain device list ";
+"Call_VC_getdevices_user_name_not_set" = "Please set user name";
+"Call_VC_getdevices_phone_number_not_set" = "Please set phone number";
+"Call_VC_getdevices_phone_number_not_set_tip" = "Please set your phone number first";
+
+
+// ------ Account Set VC --------
+"AccountSetting_VC_title" = "Account Setting";
+"AccountSetting_VC_btn_title" = "Display Password";
+"AccountSetting_VC_btn_title_hide" = "Hide Password";
+
+// ------ Account Edit VC -------
+"AccountEdit_VC_title" = " Edit Account ";
+
+// --------- QRCode VC ----------
+"QRCode_VC_start_camera" = "Starting Camera";
+"QRCode_VC_camera_permission" = "Go to privacy settings and turn on the application permissions";
+
+// -------- MJRefresh -----------
+"MJRefresh_Pull_down_refresh" = "Pull down refresh";
+"MJRefresh_Refresh_Now" = "Refresh Now";
+"MJRefresh_Refreshing_data" = "Refreshing";
+"MJRefresh_last_update" = "Latest update: ";
+"MJRefresh_last_update_no_record" = "Latest update: no record";
+
+
+

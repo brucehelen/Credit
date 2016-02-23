@@ -1,0 +1,205 @@
+/*
+ LocalLanguage.strings
+ InstantCare
+ 
+ Created by bruce-zhu on 15/11/27.
+ Copyright © 2015年 omg. All rights reserved.
+ */
+
+// ------------ 通用 ------------
+"Common_save_success" = "保存成功";
+"Common_network_request_OK" = "網絡請求成功";
+"Common_network_request_fail" = "網絡請求失敗";
+"Common_network_request_now" = "正在請求，請稍後";
+"Common_cancel" = "取消";
+"Common_input_error" = "輸入有誤";
+
+// ------------- VC -------------
+"VC_login_email" = "電子郵件";
+"VC_login_pd" = "密碼";
+
+"VC_login_remember" = "記得我的登錄信息";
+"VC_login_forgetPd" = "忘記密碼?";
+
+"VC_login_OK" = "確認";
+"VC_login_Reg" = "註冊";
+
+"VC_login_error_input" = "請輸入正確的用戶名和密碼";
+"VC_login_logo_image_name" = "omg_loading_text";
+"VC_login_login_now" = "正在登錄";
+"VC_login_login_success" = "登錄成功";
+"VC_login_login_fail" = "登錄失敗";
+
+// ----------- Main VC ----------
+"MAIN_VC_location_btn" = "定位記錄";
+"MAIN_VC_health_btn" = "健康記錄";
+"MAIN_VC_call_btn" = "撥打電話";
+"MAIN_VC_vip_btn" = "會員服務";
+
+"MAIN_VC_menu_accout" = "賬戶設定";
+"MAIN_VC_menu_device" = "裝置設定";
+"MAIN_VC_menu_logout" = "賬號退出";
+"MAIN_VC_menu_language" = "語言設定";
+
+// --------- Register VC --------
+"Reg_VC_title" = "註冊";
+"Reg_VC_tip_name" = "姓名";
+"Reg_VC_tip_nickname" = "昵稱";
+"Reg_VC_tip_email" = "E-mail";
+"Reg_VC_tip_password" = "登入密碼";
+"Reg_VC_tip_again_pd" = "再次輸入密碼";
+"Reg_VC_tip_birthday" = "點擊以輸入生日";
+"Reg_VC_tip_address" = "地址";
+"Reg_VC_tip_phone" = "電話";
+"Reg_VC_birthday" = "生日";
+"Reg_VC_birthday_cancel" = "取消";
+"Reg_VC_birthday_OK" = "確認";
+"Reg_VC_register_tip" = "E-mail和密碼必須填寫";
+"Reg_VC_register_password_error" = "請輸入正確的密碼";
+"Reg_VC_register_now" = "正在註冊，請稍後";
+"Reg_VC_register_success" = "註冊成功";
+"Reg_VC_register_fail" = "註冊失敗";
+
+// --------- Location VC --------
+"Location_VC_card_btn" = "打卡";
+"Location_VC_history_btn" = "歷史";
+"Location_VC_SOS_btn" = "救援";
+"Location_VC_latest_record" = "最新記錄";
+"Location_VC_location_now" = "正在獲取地址";
+"Location_VC_location_fail" = "地址獲取失敗";
+"Location_VC_location_no_records" = "沒有資料";
+
+// ------ Device Setting VC -----
+"DeviceSetting_VC_select" = "請選擇要執行的操作";
+"DeviceSetting_VC_edit" = "編輯";
+"DeviceSetting_VC_delete" = "刪除";
+"DeviceSetting_VC_delete_confirm" = "是否確認刪除該筆資料?";
+"DeviceSetting_VC_delete_success" = "資料成功刪除";
+"DeviceSetting_VC_OK" = "確認";
+"DeviceSetting_VC_cancel" = "取消";
+"DeviceSetting_VC_add_device" = "新增資料";
+"DeviceSetting_VC_add_header_tip" = "點擊頭像以做更換";
+"DeviceSetting_VC_add_name" = "名字";
+"DeviceSetting_VC_add_phone" = "電話";
+"DeviceSetting_VC_add_imei" = "IMEI碼";
+"DeviceSetting_VC_add_imei_error" = "IMEI輸入有誤";
+"DeviceSetting_VC_add_OK" = "完成";
+"DeviceSetting_VC_add_cancel" = "取消";
+"DeviceSetting_VC_edit_change_icon" = "點擊以更換";
+"DeviceSetting_VC_edit_device_setting" = "硬件設定";
+"DeviceSetting_VC_edit_device_setting_detail" = "跌倒偵測, GPS啟動頻率, 上傳間隔...";
+
+"DeviceSetting_VC_edit_header_src" = "選擇頭像來源";
+"DeviceSetting_VC_edit_header_src_camera" = "照相機";
+"DeviceSetting_VC_edit_header_src_gallery" = "本地相冊";
+
+// ------------ Device Edit VC ----------
+"DeviceEdit_VC_title" = "編輯資料";
+"DeviceEdit_VC_watch_select_title" = "請選擇您的裝置圖像";
+
+"DeviceEdit_VC_setting_title_device_set" = "硬件設定";
+"DeviceEdit_VC_setting_title_device_set_detail" = "跌倒偵測, GPS啟動頻率, 上傳間隔";
+"DeviceEdit_VC_setting_title_call_set" = "撥號設定";
+"DeviceEdit_VC_setting_title_call_set_detail" = "親情號碼, 緊急號碼";
+"DeviceEdit_VC_setting_title_body_set" = "身體素質";
+"DeviceEdit_VC_setting_title_body_set_detail" = "身高, 步長, 體重";
+"DeviceEdit_VC_setting_title_device_remind" = "提醒设定";
+"DeviceEdit_VC_setting_title_device_remind_detail" = "设定回诊、吃药等定时提醒功能";
+"DeviceEdit_VC_setting_title_device_reset" = "重置";
+"DeviceEdit_VC_setting_title_device_reset_detail" = "恢復原始設定";
+
+// ------ Device Setting Detail VC -----
+"DeviceSettingDetail_VC_title" = "硬體設定";
+"DeviceSettingDetail_VC_falldown" = "跌倒偵測";
+"DeviceSettingDetail_VC_poweron_time" = "定時開機";
+"DeviceSettingDetail_VC_poweroff_time" = "定時關機";
+"DeviceSettingDetail_VC_listen" = "背景監聽";
+"DeviceSettingDetail_VC_light_on" = "擡手亮屏";
+
+"DeviceSettingDetail_VC_start_frequency" = "啟動頻率";
+"DeviceSettingDetail_VC_gps_on" = "GPS啟動頻率";
+"DeviceSettingDetail_VC_upload" = "上傳間隔頻率";
+"DeviceSettingDetail_VC_every" = "每";
+"DeviceSettingDetail_VC_every_minute" = "分鐘";
+"DeviceSettingDetail_VC_shutdown" = "關閉";
+
+// --- Device Setting Detial Call VC ---
+"DeviceSettingDetailCall_VC_title" = "撥號設定";
+"DeviceSettingDetailCall_VC_call_mute" = "來電靜音";
+"DeviceSettingDetailCall_VC_call_limit" = "通話限時";
+"DeviceSettingDetailCall_VC_call_set" = "通話設置";
+"DeviceSettingDetailCall_VC_call_family_number" = "親情號碼";
+"DeviceSettingDetailCall_VC_call_sos_number" = "緊急號碼";
+
+"DeviceSettingDetailCall_VC_call_first_group" = "第壹組";
+"DeviceSettingDetailCall_VC_call_second_group" = "第二組";
+"DeviceSettingDetailCall_VC_call_third_group" = "第三組";
+
+// -- Device Setting Detail Body VC --
+"DeviceSettingDetailBody_VC_step" = "步距設定";
+"DeviceSettingDetailBody_VC_height" = "身高設定";
+"DeviceSettingDetailBody_VC_weight" = "體重設定";
+
+// ------- Health Record VC -----
+"HealthRecord_VC_blood_pressure" = "血壓";
+"HealthRecord_VC_sbp_title" = "低壓";
+"HealthRecord_VC_dbp_title" = "高壓";
+"HealthRecord_VC_pluse_title" = "脈搏";
+
+"HealthRecord_VC_blood_sugar" = "血糖";
+"HealthRecord_VC_glucose_title" = "全血血糖";
+"HealthRecord_VC_plasma_title" = "血漿血糖";
+
+"HealthRecord_VC_heart_rate" = "心率";
+"HealthRecord_VC_pedometer" = "計步";
+"HealthRecord_VC_pedometer_numbers" = "步數";
+"HealthRecord_VC_pedometer_cal" = "卡路裏";
+"HealthRecord_VC_pedometer_dis" = "距離";
+"HealthRecord_VC_pedometer_standard" = "標準值";
+
+"HealthRecord_VC_init_tip" = "請從上方點擊您希望取得的健康資訊項目";
+
+"HealthRecord_VC_last_checktime" = "最後測量時間";
+"HealthRecord_VC_change_date" = "更改測量區間";
+"HealthRecord_VC_change_date_title" = "測量區間日期";
+
+"HealthRecord_VC_change_date_error" = "日期選擇錯誤，請重新選擇";
+
+"HealthRecord_VC_lower_than" = "低於";
+
+// ---------- VIP service -------
+"VIPService_VC_wallet" = "電子錢包";
+"VIPService_VC_super_mall" = "超級商城";
+"VIPService_VC_bonus_area" = "紅利專區";
+"VIPService_VC_electronic_ticket" = "電子票券";
+
+// ----------- call VC ----------
+"Call_VC_calltype" = "請選擇要撥打的方式";
+"Call_VC_SpeedDial" = "快速撥號";
+"Call_VC_Envlistening" = "環境監聽";
+"Call_VC_getdevices" = "正在獲取設備列表";
+"Call_VC_getdevices_success" = "獲取成功";
+"Call_VC_getdevices_fail" = "獲取失敗";
+"Call_VC_getdevices_user_name_not_set" = "姓名未設置";
+"Call_VC_getdevices_phone_number_not_set" = "電話號碼未設置";
+"Call_VC_getdevices_phone_number_not_set_tip" = "請先設置電話號碼";
+
+
+// ------ Account Set VC --------
+"AccountSetting_VC_title" = "賬戶設定";
+"AccountSetting_VC_btn_title" = "顯示密碼";
+"AccountSetting_VC_btn_title_hide" = "隱藏密碼";
+
+// ------ Account Edit VC -------
+"AccountEdit_VC_title" = "賬戶設定";
+
+// --------- QRCode VC ----------
+"QRCode_VC_start_camera" = "相機啟動中";
+"QRCode_VC_camera_permission" = "請到設置隱私中開啟本程序相機權限";
+
+// -------- MJRefresh -----------
+"MJRefresh_Pull_down_refresh" = "下拉可以刷新";
+"MJRefresh_Refresh_Now" = "立即刷新";
+"MJRefresh_Refreshing_data" = "正在刷新數據";
+"MJRefresh_last_update" = "最後更新: ";
+"MJRefresh_last_update_no_record" = "最後更新: 無記錄";

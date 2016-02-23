@@ -1,0 +1,72 @@
+//
+//  InstantCare-Prefix.pch
+//  InstantCare
+//
+//  Created by bruce-zhu on 15/11/27.
+//  Copyright © 2015年 omg. All rights reserved.
+//
+
+#ifndef InstantCare_Prefix_pch
+#define InstantCare_Prefix_pch
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "Masonry.h"
+#import "MBProgressHUD.h"
+#import "IQKeyboardManager.h"
+#import "SVProgressHUD.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "KMMemberManager.h"
+#import "UIImage+Extension.h"
+#import "KMNetAPI.h"
+#import "KMNetworkResModel.h"
+#import "NSString+Extension.h"
+#endif
+
+#define APP_LAN_TABLE   @"LocalLanguage"
+
+#define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define WS_SELF(weakSelf, self)  __weak __typeof(&*self)weakSelf = self;
+
+// 服务器端地址
+#define kServerAddress      @"52.68.231.20"
+//#define kServerAddress      @"192.168.10.54
+
+// map key
+// intantCare11     Y4ouC6IqFM2WumZ4aT0g9vtA
+// intantCare       iDrw4YfEjd2Ebrm2IAaHap48
+// instantcare.km	WOIEbAPUNidI3DFfwSkokRrY
+#define kBaiduMapKey        @"WOIEbAPUNidI3DFfwSkokRrY"
+
+// intantCare11		AIzaSyAm-MMCgb-m0IkFH9XcfmF-qR8ztr1k2rs
+// instantcare.km	AIzaSyDyIHOddNjB9e-pcGF4wqGYFFIcVOvnoDY
+#define kGoogleMapKey       @"AIzaSyDyIHOddNjB9e-pcGF4wqGYFFIcVOvnoDY"
+
+#define kNetReqSuccess      1
+#define kNetReqFail         0
+
+#define kNetReqSuccessStr   NSLocalizedStringFromTable(@"Common_network_request_OK", APP_LAN_TABLE, nil)
+#define kNetReqFailStr      NSLocalizedStringFromTable(@"Common_network_request_fail", APP_LAN_TABLE, nil)
+#define kNetReqNowStr       NSLocalizedStringFromTable(@"Common_network_request_now", APP_LAN_TABLE, nil)
+
+#define kLoadStringWithKey(key)     NSLocalizedStringFromTable(key, APP_LAN_TABLE, nil)
+
+#define kUserInfor(key)     [SVProgressHUD showInfoWithStatus:kLoadStringWithKey(key)]
+#define kUserError(key)     [SVProgressHUD showErrorWithStatus:kLoadStringWithKey(key)]
+#define kUserSuccess(key)   [SVProgressHUD showSuccessWithStatus:kLoadStringWithKey(key)]
+
+#define RGB(r,g,b)          [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define RGBA(r,g,b,a)       [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+#ifdef DEBUG
+#define DMLog(...) NSLog(__VA_ARGS__)
+#else
+#define DMLog(...) do { } while (0)
+#endif
+
+#endif /* InstantCare_Prefix_pch */

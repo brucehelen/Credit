@@ -10,19 +10,20 @@
 #define InstantCare_Prefix_pch
 
 #ifdef __OBJC__
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "Masonry.h"
-#import "MBProgressHUD.h"
-#import "IQKeyboardManager.h"
-#import "SVProgressHUD.h"
-#import "MJExtension.h"
-#import "MJRefresh.h"
-#import "KMMemberManager.h"
-#import "UIImage+Extension.h"
-#import "KMNetAPI.h"
-#import "KMNetworkResModel.h"
-#import "NSString+Extension.h"
+    #import <Foundation/Foundation.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <UIKit/UIKit.h>
+    #import "Masonry.h"
+    #import "MBProgressHUD.h"
+    #import "IQKeyboardManager.h"
+    #import "SVProgressHUD.h"
+    #import "MJExtension.h"
+    #import "MJRefresh.h"
+    #import "KMMemberManager.h"
+    #import "UIImage+Extension.h"
+    #import "KMNetAPI.h"
+    #import "KMNetworkResModel.h"
+    #import "NSString+Extension.h"
 #endif
 
 #define APP_LAN_TABLE   @"LocalLanguage"

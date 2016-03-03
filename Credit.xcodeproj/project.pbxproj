@@ -433,6 +433,7 @@
 		7A79FCE21C34DC0C00413900 /* KMPushMsgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A79FCE11C34DC0C00413900 /* KMPushMsgModel.m */; };
 		7A8101991C226968009018E0 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8101981C226968009018E0 /* NSString+Extension.m */; };
 		7A8101BF1C241536009018E0 /* KMLocationConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8101BE1C241536009018E0 /* KMLocationConvert.m */; };
+		7A8C34F01C88090300728CBE /* server.cer in Resources */ = {isa = PBXBuildFile; fileRef = 7A8C34EF1C8807EE00728CBE /* server.cer */; };
 		7A983EC31C100C5300CA5D0D /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A983EA21C100C5300CA5D0D /* PNBar.m */; };
 		7A983EC41C100C5300CA5D0D /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A983EA41C100C5300CA5D0D /* PNBarChart.m */; };
 		7A983EC51C100C5300CA5D0D /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A983EA81C100C5300CA5D0D /* PNChartLabel.m */; };
@@ -1371,6 +1372,7 @@
 		7A8101981C226968009018E0 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		7A8101BD1C241536009018E0 /* KMLocationConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMLocationConvert.h; sourceTree = "<group>"; };
 		7A8101BE1C241536009018E0 /* KMLocationConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMLocationConvert.m; sourceTree = "<group>"; };
+		7A8C34EF1C8807EE00728CBE /* server.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = server.cer; sourceTree = "<group>"; };
 		7A983EA11C100C5300CA5D0D /* PNBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBar.h; sourceTree = "<group>"; };
 		7A983EA21C100C5300CA5D0D /* PNBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBar.m; sourceTree = "<group>"; };
 		7A983EA31C100C5300CA5D0D /* PNBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBarChart.h; sourceTree = "<group>"; };
@@ -3043,6 +3045,7 @@
 		7A9DEC961C0865F5005AAD06 /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				7A8C34EF1C8807EE00728CBE /* server.cer */,
 				7A79FCC21C312E4800413900 /* GoogleMaps.bundle */,
 				7AD7D5F81C2A70D800B3CECE /* mapapi.bundle */,
 				7A9DEC971C0865F5005AAD06 /* picture */,
@@ -3287,6 +3290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8C34F01C88090300728CBE /* server.cer in Resources */,
 				7A983EF91C100F0E00CA5D0D /* omg_health_btn_bloodpressure.png in Resources */,
 				7A010B0F1C1037C100AFC4DD /* omg_service_btn_wallet_onclick.png in Resources */,
 				7A010B061C1037C100AFC4DD /* omg_service_btn_bonus_onclick.png in Resources */,

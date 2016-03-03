@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7A73C9561C083B83002DAA4D"
-            BuildableName = "InstantCare.app"
-            BlueprintName = "InstantCare"
-            ReferencedContainer = "container:InstantCare.xcodeproj">
+            BuildableName = "Credit.app"
+            BlueprintName = "Credit"
+            ReferencedContainer = "container:Credit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7A73C9561C083B83002DAA4D"
-            BuildableName = "InstantCare.app"
-            BlueprintName = "InstantCare"
-            ReferencedContainer = "container:InstantCare.xcodeproj">
+            BuildableName = "Credit.app"
+            BlueprintName = "Credit"
+            ReferencedContainer = "container:Credit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

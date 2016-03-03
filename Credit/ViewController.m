@@ -15,19 +15,7 @@
 #import "APService.h"
 #import "KMPushMsgModel.h"
 
-#define kPerImageInterval       0.08        // 启动动画播放间隔
-
 @interface ViewController ()
-
-// 启动动画
-@property (nonatomic, strong) UIImageView *logoImageView;
-@property (nonatomic, strong) UIImageView *logoStaticImageView;
-
-@property (nonatomic, strong) UIImageView *rememberImageView;
-@property (nonatomic, strong) UITextField *emailTextField;
-@property (nonatomic, strong) UITextField *pdTextField;
-
-@property (nonatomic, strong) NSURLConnection *connection;
 
 @end
 
@@ -36,137 +24,53 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self testHTTPS];
 }
 
+#define HOST    @"https://121.42.171.115/api/v1/bids/1"
 
-#pragma mark - 极光推送
-- (void)configJPush
+- (void)testHTTPS
 {
-    NSNotificationCenter *defaultCenter = [NSNotificationCenter defaultCenter];
-    [defaultCenter addObserver:self
-                      selector:@selector(networkDidSetup:)
-                          name:kJPFNetworkDidSetupNotification
-                        object:nil];
-    [defaultCenter addObserver:self
-                      selector:@selector(networkDidClose:)
-                          name:kJPFNetworkDidCloseNotification
-                        object:nil];
-    [defaultCenter addObserver:self
-                      selector:@selector(networkDidRegister:)
-                          name:kJPFNetworkDidRegisterNotification
-                        object:nil];
-    [defaultCenter addObserver:self
-                      selector:@selector(networkDidLogin:)
-                          name:kJPFNetworkDidLoginNotification
-                        object:nil];
-    [defaultCenter addObserver:self
-                      selector:@selector(networkDidReceiveMessage:)
-                          name:kJPFNetworkDidReceiveMessageNotification
-                        object:nil];
-    [defaultCenter addObserver:self
-                      selector:@selector(serviceError:)
-                          name:kJPFServiceErrorNotification
-                        object:nil];
+    [ViewController getRequestWithUrl:HOST
+                              success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                  NSString *jsonString = [[NSString alloc] initWithData:responseObject
+                                                                               encoding:NSUTF8StringEncoding];
+
+                                  NSLog(@"success %@", jsonString);
+                              } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                  NSLog(@"error: %@", error);
+                              }];
 }
 
-- (void)unObserveAllNotifications
-{
-    NSNotificationCenter *defaultCenter = [NSNotificationCenter defaultCenter];
-    [defaultCenter removeObserver:self
-                             name:kJPFNetworkDidSetupNotification
-                           object:nil];
-    [defaultCenter removeObserver:self
-                             name:kJPFNetworkDidCloseNotification
-                           object:nil];
-    [defaultCenter removeObserver:self
-                             name:kJPFNetworkDidRegisterNotification
-                           object:nil];
-    [defaultCenter removeObserver:self
-                             name:kJPFNetworkDidLoginNotification
-                           object:nil];
-    [defaultCenter removeObserver:self
-                             name:kJPFNetworkDidReceiveMessageNotification
-                           object:nil];
-    [defaultCenter removeObserver:self
-                             name:kJPFServiceErrorNotification
-                           object:nil];
++ (AFSecurityPolicy*)customSecurityPolicy {
+
+    AFSecurityPolicy* policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
+    policy.validatesDomainName = NO;
+    policy.allowInvalidCertificates = YES;
+    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"server" ofType:@"cer"];
+    NSData *certData = [NSData dataWithContentsOfFile:cerPath];
+    policy.pinnedCertificates = @[certData];
+
+    return policy;
 }
 
-- (void)networkDidSetup:(NSNotification *)notification
-{
-    NSLog(@"已连接");
++ (AFHTTPRequestOperationManager*)customHttpRequestOperationManager {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.securityPolicy = [self customSecurityPolicy]; // SSL
+    return manager;
 }
 
-- (void)networkDidClose:(NSNotification *)notification
-{
-    NSLog(@"未连接");
-}
-
-- (void)networkDidRegister:(NSNotification *)notification
-{
-    NSLog(@"已注册");
-}
-
-- (void)networkDidLogin:(NSNotification *)notification
-{
-    NSString *jid = [APService registrationID];
-    DMLog(@"JID: %@", jid);
-}
-
-- (void)networkDidReceiveMessage:(NSNotification *)notification
-{
-    NSDictionary *userInfo = [notification userInfo];
-    NSString *title = [userInfo valueForKey:@"title"];
-    NSString *content = [userInfo valueForKey:@"content"];
-    NSDictionary *extra = [userInfo valueForKey:@"extras"];
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    
-    [dateFormatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
-    
-    NSString *currentContent = [NSString
-                                stringWithFormat:
-                                @"收到自定义消息:%@\ntitle:%@\ncontent:%@\nextra:%@\n",
-                                [NSDateFormatter localizedStringFromDate:[NSDate date]
-                                                               dateStyle:NSDateFormatterNoStyle
-                                                               timeStyle:NSDateFormatterMediumStyle],
-                                title, content, [self logDic:extra]];
-    DMLog(@"%@", currentContent);
-}
-
-- (void)serviceError:(NSNotification *)notification
-{
-    NSDictionary *userInfo = [notification userInfo];
-    NSString *error = [userInfo valueForKey:@"error"];
-    NSLog(@"%@", error);
-}
-
-// log NSSet with UTF8
-// if not ,log will be \Uxxx
-- (NSString *)logDic:(NSDictionary *)dic
-{
-    if (![dic count]) {
-        return nil;
-    }
-
-    NSString *tempStr1 =
-    [[dic description] stringByReplacingOccurrencesOfString:@"\\u"
-                                                 withString:@"\\U"];
-    NSString *tempStr2 =
-    [tempStr1 stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
-    NSString *tempStr3 =
-    [[@"\"" stringByAppendingString:tempStr2] stringByAppendingString:@"\""];
-    NSData *tempData = [tempStr3 dataUsingEncoding:NSUTF8StringEncoding];
-    NSString *str =
-    [NSPropertyListSerialization propertyListFromData:tempData
-                                     mutabilityOption:NSPropertyListImmutable
-                                               format:NULL
-                                     errorDescription:NULL];
-    return str;
-}
-
-- (void)dealloc
-{
-    [self unObserveAllNotifications];
++ (void)getRequestWithUrl:(NSString*)url success:(void(^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void(^) (AFHTTPRequestOperation *operation, NSError *error))failure {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    AFHTTPRequestOperationManager *manager = [ViewController customHttpRequestOperationManager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        success(operation, responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        failure(operation, error);
+    }];
 }
 
 @end
